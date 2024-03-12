@@ -1,0 +1,40 @@
+*{box-sizing:border-box;
+ padding: 0%;
+ margin: 0%;
+}
+
+.title{
+font-size:3rem;
+background:none;
+color:crimson;
+margin:40px;
+text-align: center;
+}
+/* Cuando hay un mínimo de 700 px, el color de fondo se cambia a chocolate*/
+ @media screen and (min-width: 700px){
+   body{
+  background-color: chocolate;}
+ }
+    /* Cuando hay un mínimo de 400px de ancho y un maximo de 700px, el color de fondo cambia de color*/
+ @media screen and (min-width:400px), (max-width:700px) {
+  .tittle {
+    background: #000;
+    color: #fff;
+  }
+}
+/*Cuando hay un maximo de 600px de ancho, el texto se alinea a la derecha y el color de fondo cambia de color*/
+@media screen and (max-width:600px) {
+  .tittle {
+    text-align: left;
+    background: steelblue;
+  }
+}
+/*Al oprimir "imprimir" se hacen los siguientes cambios*/
+@media print {
+  .title {
+ color: steelblue;
+ font-size: 5rem;
+text-align: right;
+font-family: cursive;
+  }
+}
